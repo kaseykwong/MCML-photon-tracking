@@ -12,26 +12,28 @@
 
 #### SPECIFY DATA FOR RUN 1
 #InParm                    	# Input parameters. cm is used.
-figure1.mco 	A            	# output file name, ASCII.
+figure1_6.mco 	A            	# output file name, ASCII.
 1000000                  	# No. of photons
-0.005	0.01               	# dz, dr [cm]
-200	50	1                	# No. of dz, dr, da.
+0.005	0.005               	# dz, dr [cm]
+200	50	1               # No. of dz, dr, da.
 
-1                        	# Number of layers
+2                        	# Number of layers
 #n	mua	mus	g	d         	# One line for each layer
 1                         	# n for medium above
 1	0.1	100	0.9	1    	# layer 1
+1.37	0.1	100	0.9	1	# layer 2
 1                        	# n for medium below
 
 #### SPECIFY DATA FOR RUN 2
 #InParm                    	# Input parameters. cm is used.
-figure2.mco 	A            	# output file name, ASCII.
+figure2_6.mco 	A            	# output file name, ASCII.
 1000000                  	# No. of photons
-0.005	0.01               	# dz, dr [cm]
+0.005	0.005               	# dz, dr [cm]
 200	50	1                	# No. of dz, dr, da.
 
-1                        	# Number of layers
+2                        	# Number of layers
 #n	mua	mus	g	d         	# One line for each layer
 1                         	# n for medium above
 1.37	0.1	100	0.9	1    	# layer 1
+1	0.1	100	0.9	1	# layer 2
 1                        	# n for medium below
